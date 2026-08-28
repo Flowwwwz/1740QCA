@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>03 The Composite Image / 1740QCA Brodie Bruce</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="interior">
+
+<header class="masthead">
+  <a class="wordmark" href="index.html">Brodie Bruce <span>Portfolio</span></a>
+  <nav class="nav">
+    <a href="01-database.html">01</a>
+    <a href="02-capture.html">02</a>
+    <a href="03-composite.html" aria-current="page">03</a>
+    <a href="04-gif.html">04</a>
+    <a href="05-sequences.html">05</a>
+    <a href="06-reflection.html">06</a>
+  </nav>
+</header>
+
+<section class="hero" style="view-transition-name:card-03">
+  <div>
+    <div class="idx">Task 03 / Assignment 01</div>
+    <h1>The Composite Image</h1>
+    <p>Ten frames of one walk stacked into a single image, which is a study of movement held completely still.</p>
+  </div>
+</section>
+
+<main>
+  <section class="band reveal">
+    <h2>What I was trying to do</h2>
+    <div class="body">
+      <p class="note">The camera never moved across the whole shoot, so the building sits in exactly the same spot in every frame while the figure walks through it. Stacking those frames and revealing him out of each one gives a multiple exposure, meaning the same person appears several times across one image mid stride. It is a way of showing movement without any actual motion, which is more or less the problem this whole course is about, and it feeds straight into Tasks 04 and 05.</p>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>The stack</h2>
+    <div class="body">
+      <figure>
+        <img src="images/t03-layers.jpg" alt="Photoshop layers panel showing ten PSDs loaded as a stack">
+        <figcaption>
+          <strong>Ten frames loaded into a single file.</strong><br>
+          Brought in through File, Scripts, Load Files into Stack with automatic alignment turned on, so each shot arrives as its own layer in one document. Because every one of them came out of the same synced Lightroom grade the layers match tonally straight away with no correction needed, which is the payoff for having synced the settings back in Task 02 instead of grading each frame separately.
+        </figcaption>
+        <div class="specs">2251 × 1502 px · 300 ppi · RGB/8</div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Cutting the figure out</h2>
+    <div class="body">
+      <p class="note">Every layer needs the figure separated from the background before any of it works. I reached for the obvious tool first and it turned out to be the wrong call.</p>
+
+      <figure>
+        <img src="images/t03-eraser.jpg" alt="Photoshop showing a figure crudely erased from its background">
+        <figcaption>
+          <strong>First attempt, using the Eraser.</strong><br>
+          This did not work. The edges came out rough, there is still grass and part of the building stuck to his shoulder, and it has cut straight through his hair. The bigger issue is that the Eraser deletes the pixels themselves, so once they are gone the only way to get them back is stepping through the History panel, and across ten layers that all need the same job done one bad cut means starting that layer over. There is also nothing left to refine afterwards, because there is no edge to adjust, only absence.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/t03-blend-01.jpg" alt="Photoshop layers panel showing layer masks applied to the stack">
+        <figcaption>
+          <strong>Second attempt, Object Select into a layer mask.</strong><br>
+          Object Select reads the actual edge of the figure rather than following my brush, so it held his hair and the loose sleeve where the Eraser had failed, and with the selection still active clicking Add Layer Mask turns it straight into a mask. Because a mask hides pixels instead of deleting them I could paint parts back in whenever the selection clipped a shoe. This is the same principle as the masking I had already done in Lightroom, just in a different program.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Spacing, and getting it wrong first</h2>
+    <div class="body">
+      <div class="pair">
+        <figure>
+          <img src="images/t03-opacity.jpg" alt="Composite attempt with overlapping figures">
+          <figcaption>
+          <strong>The first version of the composite.</strong><br>
+          Built from five frames in a row, but he only moves about half a stride between each shot, so all five figures landed on top of each other. The result looks like the shot is out of register rather than like a study of movement, and your eye reads one blurry figure instead of a sequence of positions.
+        </figcaption>
+        </figure>
+        <figure>
+          <img src="images/t03-composite-02.jpg" alt="Composite with figures spaced across the frame receding into depth">
+          <figcaption>
+          <strong>The second version, sampling every fifth frame.</strong><br>
+          Same method with a wider gap between the shots. Once there is clear space between each position the figures become individually readable and your eye moves across them from one to the next. I then stepped the opacity down through the stack so the front figure sits at full strength and the ones behind it fade, which is what tells you which direction time is running. Without that fade it just looks like four people standing on a lawn.
+        </figcaption>
+        </figure>
+      </div>
+      <p class="note">I kept the version that failed on purpose, because the method itself was never the problem and the gap between the frames was, and I would not have worked that out without building the bad one first.</p>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Blending modes</h2>
+    <div class="body">
+      <figure>
+        <img src="images/t03-blend-02.jpg" alt="Photoshop with Difference blending mode applied to one layer">
+        <figcaption>
+          <strong>Difference mode applied to one layer.</strong><br>
+          Difference subtracts one layer's pixel values from whatever is underneath it, so matching areas return black and anything that differs inverts. Where he overlaps his own earlier position it breaks into inverted colour, but the background stays clean because the camera never moved and those pixels are identical in both layers. I tried Divide, Screen and Multiply as well, and Difference was the only one that produced something specific to this image rather than a generic colour shift.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Adjustment layers</h2>
+    <div class="body">
+      <div class="pair">
+        <figure>
+          <img src="images/t03-adjustment.jpg" alt="Photoshop showing a grouped adjustment preset affecting the whole stack">
+          <figcaption>
+          <strong>Unclipped, affecting the whole stack.</strong><br>
+          An Adjustments preset dropped in three layers at once, Photo Filter, Black and White, and Curves. Sitting on top of the stack they affect every layer underneath them, which pushes the whole composite into a warm monochrome. Losing the green of the lawn means the figures carry the frame rather than competing with it.
+        </figcaption>
+        </figure>
+        <figure>
+          <img src="images/t03-clip.jpg" alt="Photoshop layers panel showing a clipped Curves adjustment layer">
+          <figcaption>
+          <strong>The same layer, now clipped to one layer only.</strong><br>
+          You can see the indent and the small arrow next to the Curves thumbnail. Clipping limits an adjustment to the single layer directly below it instead of everything underneath, which is the difference between grading the whole composite and grading one figure inside it. It would not clip at all while it was sitting at the bottom of the group, because there was nothing inside that group beneath it to clip to, and moving it out so a pixel layer sat directly underneath is what made it work.
+        </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Size and format</h2>
+    <div class="body">
+      <p class="note">I saved each stage as its own separate PSD, 01 for the version that failed and 02 for the one that worked, rather than overwriting a single working file. Keeping both meant that if something went wrong I could go back to an earlier state and branch off it instead of starting the whole thing again.</p>
+      <figure>
+        <img src="images/t03-metadata.jpg" alt="Photoshop Export As dialog showing JPG at 2000 by 1335 pixels">
+        <figcaption>
+          <strong>Exported without touching the working file.</strong><br>
+          The layered PSD stays at 2251 by 1502 with every mask and adjustment intact, while Export As writes a separate JPG at 2000 px on the long edge at quality 7. That is safer than using Image Size, which resizes the document I actually have open and then has to be undone afterwards. Export As never modifies the original, so there is nothing for me to forget to reverse.
+        </figcaption>
+        <div class="specs">PSD 2251 × 1502 px · JPG 2000 × 1335 px · quality 7 · 1.8 MB</div>
+      </figure>
+    </div>
+  </section>
+
+  <div class="pager">
+    <a href="02-capture.html">&nwarr; Capture, Import, Edit, Export</a>
+    <a class="next" href="04-gif.html">The GIF &nearr;</a>
+  </div>
+</main>
+
+<footer class="sitefoot">
+  <span>1740QCA Brodie Bruce &nbsp;s5480797</span>
+  <span>QCAD, Trimester 2, 2026</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

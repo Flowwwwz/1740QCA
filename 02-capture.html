@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>02 Capture, Import, Edit, Export / 1740QCA Brodie Bruce</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="interior">
+
+<header class="masthead">
+  <a class="wordmark" href="index.html">Brodie Bruce <span>Portfolio</span></a>
+  <nav class="nav">
+    <a href="01-database.html">01</a>
+    <a href="02-capture.html" aria-current="page">02</a>
+    <a href="03-composite.html">03</a>
+    <a href="04-gif.html">04</a>
+    <a href="05-sequences.html">05</a>
+    <a href="06-reflection.html">06</a>
+  </nav>
+</header>
+
+<section class="hero" style="view-transition-name:card-02">
+  <div>
+    <div class="idx">Task 02 / Assignment 01</div>
+    <h1>Capture, Import, Edit, Export</h1>
+    <p>67 RAW frames shot on a Canon EOS 80D, brought into Lightroom Classic, graded four different ways, masked locally, then exported as PSDs.</p>
+  </div>
+</section>
+
+<main>
+  <section class="band reveal">
+    <h2>Capture</h2>
+    <div class="body">
+      <figure>
+        <img src="images/t02-raw-folder.jpg" alt="Finder showing 67 Canon CR2 files">
+        <figcaption>
+          <strong>67 RAW files in Lightroom / RAW / Assignment 01.</strong><br>
+          The Kind column says Canon Raw file on every one of them, so the camera was set to RAW and not JPEG, and they sit between 27 and 33 MB each because that is what carries the full sensor data. Once these were imported I stopped touching this folder entirely, since Lightroom only stores a path to each file rather than the file itself, which means moving any of them would break every edit I had made against them.
+        </figcaption>
+        <div class="specs">ISO 125 · 37 mm · f/5.6 · 1/640 sec · 6000 × 4000</div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Import</h2>
+    <div class="body">
+      <figure>
+        <img src="images/t02-library-module.jpg" alt="Lightroom Classic Library module showing the imported frames in grid view">
+        <figcaption>
+          <strong>The Library module once everything was imported.</strong><br>
+          I opened the catalogue from inside the database rather than launching Lightroom from the dock, because launching the app reopens whatever catalogue it used last and that could easily be the wrong one. Import was set to Add rather than Copy or Move, since Add just registers where the files already are without touching them. Copy would have duplicated 2.1 GB for no reason and Move would have pulled the RAW files straight out of the structure I built in Task 01.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Local masking</h2>
+    <div class="body">
+      <p class="note">Instead of grading the whole frame at once I built four local masks so that I could control each part of the composition on its own. I used three different selection methods across them, and I picked each one based on how that element actually behaves rather than just using whatever I was used to.</p>
+
+      <figure>
+        <img src="images/t02-masking.jpg" alt="Lightroom mask overlay showing the background selected in red with the figure excluded">
+        <figcaption>
+          <strong>Mask 1, background select.</strong><br>
+          The red overlay shows everything the mask has picked up, which is the whole building, the lawn and the shadows, with the figure cut cleanly out of the middle of it. The edge around his hair and the loose sleeve of his jumper held up far better than anything I could have brushed by hand. Having the background isolated on its own means I can darken or cool the entire environment without any of it touching his skin tones.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/t02-masking-02.jpg" alt="Lightroom Color Range mask selecting the grass">
+        <figcaption>
+          <strong>Mask 4, Colour Range sampling the grass.</strong><br>
+          Colour Range selects by sampled colour value rather than by a shape I draw, with the Refine slider at 37 controlling how far the selection spreads out from the point I sampled. That mattered here because the lawn is patchy and cut through by hard tree shadows, so brushing it would have meant tracing around every single shadow edge. Sampling the green instead let the selection follow the colour into the shadows on its own. The warm shift across the grass in this frame is the mask doing its job while the building behind it stays neutral.
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img src="images/t02-masking-03.jpg" alt="Lightroom masks panel showing Mask 2 built from three object selections">
+        <figcaption>
+          <strong>Mask 2, object select added three times.</strong><br>
+          The red panel is the only strong colour in an otherwise neutral frame, so it is the thing carrying the composition. I selected it with Object, then added two more object selections into the same mask to catch the sections the first pass had missed. Building it as one mask made from three additions rather than three separate masks means a single adjustment governs the whole panel, so it stays consistent instead of drifting between its parts, and that is what let me pull the saturation out of everything else while holding the red at full strength.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Four directions in Develop</h2>
+    <div class="body">
+      <p class="note">I built four different grades on one frame and saved each of them as a named Snapshot, so that I could flick between them and compare them directly instead of trying to judge them from memory. You can see the Snapshots panel filling up as you go across these screenshots.</p>
+
+      <div class="pair">
+        <figure>
+          <img src="images/t02-develop-01.jpg" alt="Lightroom Develop module, high contrast desaturated grade">
+          <figcaption>
+          <strong>Hard Graphic.</strong><br>
+          Contrast up to +40, saturation down to −56 and blacks down to −44. Taking the colour out turns the scene into tone and shape, so the white cladding flattens into pure light, the recessed section drops to almost black, and the grid of the building becomes the subject instead of the materials it is made from. The figure still reads against it because his jumper sits at a mid tone between the two extremes.
+        </figcaption>
+          <div class="specs">Contrast +40 · Saturation −56 · Blacks −44</div>
+        </figure>
+        <figure>
+          <img src="images/t02-develop-02.jpg" alt="Lightroom Develop module, low contrast warm faded grade">
+          <figcaption>
+          <strong>Warm Faded.</strong><br>
+          The opposite direction. Blacks at +36 stop the shadows ever reaching true black, which takes the digital edge off it and makes the whole thing feel matte, and warming it to 6401 K softens the harshness of the midday light. Contrast at −71 is further than I would normally push it, but I wanted to find the point where the image stops holding together and this sits just before that.
+        </figcaption>
+          <div class="specs">Contrast −71 · Blacks +36 · Temp 6401 K · Tint +20</div>
+        </figure>
+      </div>
+
+      <div class="pair">
+        <figure>
+          <img src="images/t02-develop-03.jpg" alt="Lightroom Develop module showing colour grading wheels">
+          <figcaption>
+          <strong>Cool Cinematic.</strong><br>
+          Built on the Colour Grading wheels rather than the Basic panel, with cool blue going into the shadows at hue 321 and warm orange into the highlights at hue 38. Splitting the tones that way separates the figure from the building using colour temperature instead of contrast, which means I keep detail at both ends of the histogram and it still reads as properly graded.
+        </figcaption>
+          <div class="specs">Shadow hue 321 · Highlight hue 38</div>
+        </figure>
+        <figure>
+          <img src="images/t02-develop-04.jpg" alt="Lightroom Develop module, natural warm grade with masks applied">
+          <figcaption>
+          <strong>Natural Warm, the one I kept.</strong><br>
+          Highlights at −50 pull back the blown out cladding and shadows at +49 open the lawn up again, with exposure down half a stop and whites at +27 so the panels stay bright without clipping. This is the grade that the four masks sit underneath, and it is the one I synced across the entire sequence.
+        </figcaption>
+          <div class="specs">Exposure −0.50 · Highlights −50 · Shadows +49 · Whites +27 · Blacks −19 · Temp 4781 K</div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Presets and syncing</h2>
+    <div class="body">
+      <figure>
+        <img src="images/t02-presets.jpg" alt="Lightroom Presets panel with User Presets expanded">
+        <figcaption>
+          <strong>Saved as a preset, then synced across the set.</strong><br>
+          Once I had settled on a direction I saved it as a preset so the grade was not stuck on one file. I deliberately left Masking out of the preset, because the masks are drawn against the composition of one specific frame and carrying them across would have placed them completely wrong on every other shot. Sync Settings then pushed the tonal grade across the full set, which matters because in Task 05 these run as a sequence and any variation between frames shows up as flicker once they play back.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  
+
+  <section class="band reveal">
+    <h2>Export</h2>
+    <div class="body">
+      <div class="pair">
+        <figure>
+          <img src="images/t02-psd-export.jpg" alt="Finder showing the exported PSD files in the Photoshop PSD folder">
+          <figcaption>
+          <strong>The exported PSDs in Photoshop / PSD.</strong><br>
+          Around 10 MB each, which is what the layered format costs. I sent them out at 1500 px on the short edge rather than at full size, because Task 03 stacks ten of these into a single document and full 6000 by 4000 frames at that layer count would have been unworkable on my machine.
+        </figcaption>
+        </figure>
+        <figure>
+          <img src="images/t02-photoshop-open.jpg" alt="A finished PSD opened at full screen size">
+          <figcaption>
+          <strong>One of them opened at full size in Photoshop.</strong><br>
+          This confirms the export actually landed as a working file rather than just an icon sitting in a folder. It is the Natural Warm grade with the four masks applied, at 2250 by 1500 pixels, which is the version I synced across the whole sequence.
+        </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="pager">
+    <a href="index.html">Index</a>
+    <a class="next" href="03-composite.html">The Composite Image &nearr;</a>
+  </div>
+</main>
+
+<footer class="sitefoot">
+  <span>1740QCA Brodie Bruce &nbsp;s5480797</span>
+  <span>QCAD, Trimester 2, 2026</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

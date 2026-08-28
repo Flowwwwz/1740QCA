@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>05 Image Sequences / 1740QCA Brodie Bruce</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="interior">
+
+<header class="masthead">
+  <a class="wordmark" href="index.html">Brodie Bruce <span>Portfolio</span></a>
+  <nav class="nav">
+    <a href="01-database.html">01</a>
+    <a href="02-capture.html">02</a>
+    <a href="03-composite.html">03</a>
+    <a href="04-gif.html">04</a>
+    <a href="05-sequences.html" aria-current="page">05</a>
+    <a href="06-reflection.html">06</a>
+  </nav>
+</header>
+
+<section class="hero" style="view-transition-name:card-05">
+  <div>
+    <div class="idx">Task 05 / Assignment 01</div>
+    <h1>Image Sequences</h1>
+    <p>66 frames read as one piece of footage in After Effects, then retimed and treated six different ways.</p>
+  </div>
+</section>
+
+<main>
+  <section class="band reveal">
+    <h2>Non-linear capture</h2>
+    <div class="body">
+      <p class="note">Linear motion is recorded in real time by a camera that runs continuously, whereas non-linear motion is built out of frames captured one at a time, like stop motion or timelapse or hyperlapse. Everything on this page is non-linear and none of it was filmed. I took 66 separate photographs, graded them, and only gave them a frame rate afterwards, which means the passage of time in these videos was decided at the desk rather than at the camera.</p>
+      <figure>
+        <img src="images/t05-ae-timeline.jpg" alt="After Effects project panel showing the imported image sequence">
+        <figcaption>
+          <strong>66 JPEGs brought in as a single sequence.</strong><br>
+          I renamed them on export so they run from seq-1 to seq-66 with no gaps, because After Effects builds a sequence by finding consecutively numbered files and a gap makes it either refuse the import or drop black frames into the middle. Ticking JPEG Sequence in the import dialog is the difference between getting one piece of footage and getting 66 separate stills, and the Project panel confirms it worked with a single item at 59.8 MB. I left Force alphabetical order switched off, because the filenames are not zero padded and sorting alphabetically would have ordered them 1, 10, 11 and scrambled the walk completely.
+        </figcaption>
+        <div class="specs">66 frames · 1920 × 1280 · JPEG sequence · 59.8 MB</div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Frame rate as the main control</h2>
+    <div class="body">
+      <p class="note">Because the source is a set of stills rather than footage, the frame rate is not a property of the recording at all, it is a decision I made afterwards. The same 66 frames can occupy eight seconds or three depending on what I set, and that choice is what decides whether the result reads as animation or as film.</p>
+
+      <div class="pair">
+        <figure>
+          <video src="video/8fps.mp4" autoplay muted loop playsinline></video>
+          <figcaption>
+          <strong>8 fps.</strong><br>
+          This sits under the rate where separate images fuse into motion, so you still see each individual frame. The walk comes out mechanical and stepped, closer to stop motion than to video, and it runs for eight seconds which gives you enough time to read it as a series of separate decisions.
+        </figcaption>
+          <div class="specs">8 fps · 8.02 sec · H.264</div>
+        </figure>
+        <figure>
+          <video src="video/24fps.mp4" autoplay muted loop playsinline></video>
+          <figcaption>
+          <strong>24 fps.</strong><br>
+          The same frames at cinema rate. The stepping disappears and it reads as continuous movement, but the clip is now under three seconds, so the smoothness costs me the length. That is the trade at the centre of this task, because when the frame count is fixed pace and duration end up being the same dial.
+        </figcaption>
+          <div class="specs">24 fps · 3.00 sec · H.264</div>
+        </figure>
+      </div>
+
+      <div class="pair">
+        <figure>
+          <video src="video/Reverse24.mp4" autoplay muted loop playsinline></video>
+          <figcaption>
+          <strong>Time reversed.</strong><br>
+          Time-Reverse Layer plays the same frames backwards without rerendering anything at all. He walks away instead of towards, and because the sun was fixed the shadows now move in a way the light cannot account for, which you tend to notice before you consciously register that it is reversed.
+        </figcaption>
+          <div class="specs">24 fps · reversed · H.264</div>
+        </figure>
+        <figure>
+          <video src="video/SpeedGraph.mp4" autoplay muted loop playsinline></video>
+          <figcaption>
+          <strong>Time remapped on the speed graph.</strong><br>
+          The four above all run at one constant rate, whereas this one changes speed inside the clip itself. I enabled Time Remapping, dropped keyframes along the timeline and then eased them so the curve ramps rather than sitting flat, which makes it start slow, accelerate through the middle of the walk and settle again at the end.
+        </figcaption>
+          <div class="specs">variable speed · time remap · H.264</div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>The speed graph</h2>
+    <div class="body">
+      <figure>
+        <img src="images/t05-speedgraph.jpg" alt="After Effects timeline showing the time remap speed graph with eased keyframes">
+        <figcaption>
+          <strong>Where the speed ramp came from.</strong><br>
+          This is the Time Remap graph in the timeline, where the line represents playback speed across the length of the clip and the yellow handles are what I dragged to shape it. Flat means a constant rate and steep means fast. Because I eased the keyframes rather than leaving them linear the curve bends instead of stepping, so the change in speed arrives gradually and you feel it as acceleration rather than as a jump cut. It is the only one where the timing changes while the clip is actually running, which makes it the closest thing here to animating time rather than just setting it.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Effects and keyframes</h2>
+    <div class="body">
+      <p class="note">The four above only change the timing of the frames, whereas these two change the image itself using effects applied to the layer and then animated with keyframes.</p>
+
+      <div class="pair">
+        <figure>
+          <video src="video/echo.mp4" autoplay muted loop playsinline></video>
+          <figcaption>
+          <strong>Echo.</strong><br>
+          Echo holds previous frames on screen underneath the current one, so he drags a trail of himself behind him as he walks. Echo Time at −0.153 pulls from just before the playhead, six echoes at 0.7 decay means each one is fainter than the last, and Maximum as the operator means the brightest pixel wins wherever they overlap. This is the same idea as my Task 03 composite except moving rather than frozen, because that one stacked the positions into a still and this one builds and dissolves the stack while it plays.
+        </figcaption>
+          <div class="specs">Echo time −0.153 · 6 echoes · decay 0.70 · Maximum</div>
+        </figure>
+        <figure>
+          <video src="video/tintkeyframe.mp4" autoplay muted loop playsinline></video>
+          <figcaption>
+          <strong>Tint, keyframed, with motion blur switched on.</strong><br>
+          Tint maps the blacks and whites to two chosen colours, and Amount to Tint is keyframed from 0 to 100 percent so the clip drains from full colour into monochrome as it plays, with the keyframes eased so the change ramps rather than switching over at a constant rate. Motion blur is turned on for the layer as well, which smears fast movement across each frame instead of leaving it crisp, and since these were shot at 1/640 there was no real blur to begin with, so it puts back something the shutter speed had removed.
+        </figcaption>
+          <div class="specs">Tint 0 to 100% · eased keyframes · motion blur on</div>
+        </figure>
+      </div>
+
+      <div class="pair">
+        <figure>
+          <img src="images/t05-echo-controls.jpg" alt="After Effects Effect Controls panel showing Echo settings">
+          <figcaption>
+          <strong>The Echo settings in Effect Controls.</strong><br>
+          Five values, and every one of them changes the result. Fewer echoes with a longer echo time gives you separated ghosts, while more echoes with a shorter time smears it into a blur. I settled between the two so the trail reads as a set of distinct positions rather than as a smudge.
+        </figcaption>
+        </figure>
+        <figure>
+          <img src="images/t05-tint-controls.jpg" alt="After Effects Effect Controls panel showing Tint with keyframes on the timeline">
+          <figcaption>
+          <strong>Tint with keyframes on the timeline.</strong><br>
+          The stopwatch next to Amount to Tint is the thing that turns a fixed setting into an animated one. You can see the keyframe markers sitting on the Time Remap and Effects rows underneath, which is the timing change and the colour change both running on the same clip at once.
+        </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Render</h2>
+    <div class="body">
+      <figure>
+        <img src="images/t05-render.jpg" alt="After Effects render queue mid-render">
+        <figcaption>
+          <strong>Rendering out to H.264.</strong><br>
+          Output Module set to H.264 at 15 Mbps on Best Settings, rendered into After Effects / Output. Each one took between four and eight seconds, because 66 frames is barely any material, which means all of the actual work in this task sits in the decisions rather than in the processing.
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="images/t05-queue.jpg" alt="After Effects render queue showing three completed renders">
+        <figcaption>
+          <strong>The render queue partway through.</strong><br>
+          The four timing variations finished, with Echo and the keyframed Tint rendered after this. I kept one variable moving at a time on purpose, because that is the only way any difference between the outputs can be put down to the thing I actually changed rather than to something else drifting alongside it.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="pager">
+    <a href="04-gif.html">&nwarr; The GIF</a>
+    <a class="next" href="06-reflection.html">Reflective Report &nearr;</a>
+  </div>
+</main>
+
+<footer class="sitefoot">
+  <span>1740QCA Brodie Bruce &nbsp;s5480797</span>
+  <span>QCAD, Trimester 2, 2026</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

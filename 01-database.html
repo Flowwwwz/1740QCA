@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>01 Image Database Creation / 1740QCA Brodie Bruce</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="interior">
+
+<header class="masthead">
+  <a class="wordmark" href="index.html">Brodie Bruce <span>Portfolio</span></a>
+  <nav class="nav">
+    <a href="01-database.html" aria-current="page">01</a>
+    <a href="02-capture.html">02</a>
+    <a href="03-composite.html">03</a>
+    <a href="04-gif.html">04</a>
+    <a href="05-sequences.html">05</a>
+    <a href="06-reflection.html">06</a>
+  </nav>
+</header>
+
+<section class="hero" style="view-transition-name:card-01">
+  <div>
+    <div class="idx">Task 01 / Assignment 01</div>
+    <h1>Image Database Creation</h1>
+    <p>Setting up the folder structure and the Lightroom catalogue that everything after this depends on.</p>
+  </div>
+</section>
+
+<main>
+  <section class="band reveal">
+    <h2>Folder structure</h2>
+    <div class="body">
+      <figure>
+        <img src="images/t01-folder-structure.jpg" alt="Finder window showing the Brodie_Bruce_MoDes database structure expanded in list view">
+        <figcaption>
+          <strong>The database structure.</strong><br>
+          The top level is 1740QCA, then Brodie_Bruce_MoDes, then a folder for each program I use, and each of those has Output, Project and Source sitting inside it. I split it by application rather than by date because project files link to their sources by path, so if a source file moves the project breaks and I have to relink everything. Keeping the sources separated from the outputs means I can clear out exports whenever I want without any risk of killing something a project depends on.
+        </figcaption>
+        <div class="specs">67 × .CR2 · Canon EOS 80D · EF 17–40mm f/4L · 6000 × 4000 · landscape</div>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>RAW integrity</h2>
+    <div class="body">
+      <figure>
+        <img src="images/t02-raw-folder.jpg" alt="Finder showing the Assignment 01 folder containing 67 Canon CR2 raw files">
+        <figcaption>
+          <strong>67 RAW files in Lightroom / RAW / Assignment 01.</strong><br>
+          The Kind column says Canon Raw file on every one of them, so the camera was set to RAW and not JPEG, and they sit between 27 and 33 MB each because that is what carries the full sensor data. Once these were imported I stopped touching this folder entirely, since Lightroom only stores a path to each file rather than the file itself, which means moving any of them would break every edit I had made against them.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Catalogue</h2>
+    <div class="body">
+      <figure>
+        <img src="images/t01-catalogue.jpg" alt="Finder showing the Lightroom catalogue files inside the 1740QCA folder">
+        <figcaption>
+          <strong>The catalogue, built inside the database rather than in Lightroom's default spot.</strong><br>
+          I made it through Create Folder with New Catalog so that Lightroom created the containing folder itself, because doing it manually first would have given me a folder inside a folder with the same name. The catalogue is not one file but a set of them. The .lrcat holds every edit, flag and snapshot, the .lrcat-data at 47 MB holds the mask data, and Previews.lrdata at 192 MB stores the rendered previews so Lightroom does not have to reopen a 33 MB RAW every time I click on something. None of the actual photographs are inside any of it, which is the whole reason the RAW folder can never move.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Backups</h2>
+    <div class="body">
+      <p class="note">My catalogue holds every edit I made across this assignment while the RAW files hold none of them, so losing it would mean losing all of the work without losing a single photograph. That is the reason it gets backed up on its own and to a second location rather than just sitting there.</p>
+      <div class="pair">
+        <figure>
+          <img src="images/t01-backup-drive.jpg" alt="Finder showing the Backups folder inside the Lightroom database">
+          <figcaption>
+          <strong>Backup one, inside the database.</strong><br>
+          Set through Catalog Settings to back up when Lightroom next exits, so that it runs automatically on quit rather than depending on me remembering to do it. It writes a dated folder into Lightroom / 1740QCA / Backups, sitting alongside the live catalogue files.
+        </figcaption>
+        </figure>
+        <figure>
+          <img src="images/t01-backup-usb.jpg" alt="Finder showing the same Backups folder copied into Downloads">
+          <figcaption>
+          <strong>Backup two, outside the database.</strong><br>
+          The same folder copied to a second location away from the database. A backup that lives next to the thing it is backing up only protects me against Lightroom corrupting the catalogue, and it does nothing at all if the folder gets deleted or the drive fails, so the second copy has to sit somewhere separate for it to actually count as a backup.
+        </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="pager">
+    <a href="index.html">Index</a>
+    <a class="next" href="02-capture.html">Capture, Import, Edit, Export &nearr;</a>
+  </div>
+</main>
+
+<footer class="sitefoot">
+  <span>1740QCA Brodie Bruce &nbsp;s5480797</span>
+  <span>QCAD, Trimester 2, 2026</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>04 The GIF / 1740QCA Brodie Bruce</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="interior">
+
+<header class="masthead">
+  <a class="wordmark" href="index.html">Brodie Bruce <span>Portfolio</span></a>
+  <nav class="nav">
+    <a href="01-database.html">01</a>
+    <a href="02-capture.html">02</a>
+    <a href="03-composite.html">03</a>
+    <a href="04-gif.html" aria-current="page">04</a>
+    <a href="05-sequences.html">05</a>
+    <a href="06-reflection.html">06</a>
+  </nav>
+</header>
+
+<section class="hero" style="view-transition-name:card-04">
+  <div>
+    <div class="idx">Task 04 / Assignment 01</div>
+    <h1>The GIF</h1>
+    <p>The composite pulled back apart and played as frames. Five animations out of one layer stack, each with a different sense of time.</p>
+  </div>
+</section>
+
+<main>
+  <section class="band reveal">
+    <h2>From stack to frames</h2>
+    <div class="body">
+      <p class="note">Task 03 stacked all of the exposures on top of each other into one still image, and this does the exact opposite by playing those same layers back one at a time. It is the same material read two different ways, one spatial and one temporal.</p>
+      <figure>
+        <img src="images/t04-timeline.jpg" alt="Photoshop Timeline panel in frame animation mode showing seventeen frames">
+        <figcaption>
+          <strong>The Timeline panel in Frame Animation mode.</strong><br>
+          Photoshop opens the Timeline in Video mode by default, which is the wrong one for this, because video timelines produce continuous footage rather than the separate frames a GIF needs. Switching it to Frame Animation and then running Make Frames From Layers turned every layer of the composite into its own animation frame in one step, masks included. Playing them back in order rebuilds the walk that the composite had frozen.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Changing the frame duration</h2>
+    <div class="body">
+      <p class="note">All five of these come from the same seventeen frames, and the only thing changing between them is how long each frame is held on screen. That one variable on its own changes what the animation ends up being about.</p>
+
+      <div class="pair">
+        <figure>
+          <img src="images/t04-gif-01.gif" alt="Animation at a fast frame rate">
+          <figcaption>
+          <strong>0.1 second per frame.</strong><br>
+          Fast enough that your eye starts joining the positions together, so it reads as movement rather than as separate photographs, but there are not enough frames to make it genuinely smooth so it still stutters. It ends up sitting somewhere between an animation and a slideshow.
+        </figcaption>
+          <div class="specs">17 frames · 0.1 s · loop forever</div>
+        </figure>
+        <figure>
+          <img src="images/t04-gif-02.gif" alt="Animation at a slow frame rate">
+          <figcaption>
+          <strong>0.5 second per frame.</strong><br>
+          Five times slower than the last one. Each position is held long enough that you look at it on its own, so it reads as a set of photographs rather than as motion. The frames are identical, but changing the tempo changes what the thing is about. At 0.1 it is a walk, and at 0.5 it is a study of postures.
+        </figcaption>
+          <div class="specs">17 frames · 0.5 s · loop forever</div>
+        </figure>
+      </div>
+
+      <div class="pair">
+        <figure>
+          <img src="images/t04-gif-03.gif" alt="Animation with a long hold on the opening frame">
+          <figcaption>
+          <strong>Five seconds held on the first frame.</strong><br>
+          Holding the opening frame before the rest of the sequence runs creates a pause, so when the movement finally arrives it feels like an event rather than a loop starting over. That is rhythm rather than tempo, meaning it is not about how fast the frames go but about where the emphasis falls inside them.
+        </figcaption>
+        </figure>
+        <figure>
+          <img src="images/t04-gif-04.gif" alt="Animation with reversed frame order">
+          <figcaption>
+          <strong>Reversed.</strong><br>
+          The same frames played backwards. He was walking towards the camera, so reversing it turns the whole thing into a retreat, and the shadows now move against the direction the sun says they should be going. Nothing was reshot or re-edited here and only the order changed, which is the clearest sign that sequence carries meaning on its own.
+        </figcaption>
+        </figure>
+      </div>
+
+      <figure>
+        <img src="images/t04-gif-05.gif" alt="Animation with tweened intermediate frames">
+        <figcaption>
+          <strong>Tweened.</strong><br>
+          Tween builds frames in between two existing ones by interpolating their position and opacity. The other versions cut hard from one position straight to the next, whereas this one dissolves, so he fades through the space rather than stepping through it. It is the smoothest of the five and also the least true to what I actually photographed, because those in between frames never existed in front of the camera.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Export</h2>
+    <div class="body">
+      <figure>
+        <img src="images/t04-export.jpg" alt="Photoshop Timeline showing frame delays set across every frame">
+        <figcaption>
+          <strong>Exporting through Save for Web.</strong><br>
+          Save for Web is the one that writes an animated GIF, as opposed to Export As or Quick Export which flatten it to a single still. GIF only carries 256 colours, so I checked the exports back against the composite for banding in the lawn and the sky where the gradients are smoothest. The full size files came out between 10 and 22 MB, which is unusable in a browser, so I brought both the pixel dimensions and the palette down to get them to 1 to 2 MB with no visible difference at the size they display here.
+        </figcaption>
+        <div class="specs">Save for Web · GIF · 256 colours · loop forever · 1 to 2 MB each</div>
+      </figure>
+    </div>
+  </section>
+
+  <div class="pager">
+    <a href="03-composite.html">&nwarr; The Composite Image</a>
+    <a class="next" href="05-sequences.html">Image Sequences &nearr;</a>
+  </div>
+</main>
+
+<footer class="sitefoot">
+  <span>1740QCA Brodie Bruce &nbsp;s5480797</span>
+  <span>QCAD, Trimester 2, 2026</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
