@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Assignment 02 Motion Graphic Design / 1740QCA Brodie Bruce</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+  ul.refs{margin:0;padding-left:1.15em;line-height:1.75}
+  ul.refs li{margin-bottom:.5em}
+  .body figure video{width:100%;height:auto;display:block;background:#0E0E0E}
+  .todo{display:block;padding:14px 16px;border-left:3px solid #B03030;
+        background:#FBEFEF;color:#7A1F1F;font-size:.92em;line-height:1.55;margin:10px 0}
+  .compgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:26px 0}
+  .compgrid .shot,.compgrid .clip{margin:0}
+  .compgrid figcaption{margin-top:10px}
+  @media (max-width:860px){.compgrid{grid-template-columns:1fr}}
+  .lede{font-size:1.02em;line-height:1.7}
+  .taghead{font-size:.72em;letter-spacing:.14em;text-transform:uppercase;
+           color:#B03030;font-weight:700;margin-bottom:6px}
+</style>
+</head>
+<body class="interior">
+
+<header class="masthead">
+  <a class="wordmark" href="index.html">Brodie Bruce <span>Portfolio</span></a>
+  <nav class="nav">
+    <a href="01-database.html">01</a>
+    <a href="02-capture.html">02</a>
+    <a href="03-composite.html">03</a>
+    <a href="04-gif.html">04</a>
+    <a href="05-sequences.html">05</a>
+    <a href="06-reflection.html">06</a>
+    <a href="07-a2.html" aria-current="page">A2</a>
+  </nav>
+</header>
+
+<section class="hero" style="view-transition-name:card-a2">
+  <div>
+    <div class="idx">Assignment 02 / Motion Graphic Design</div>
+    <h1>Kinetic Type</h1>
+    <p>Ten After Effects compositions built as an iterative ladder, each one a copy of the last with a single new variable added, then composited into one sequence cut to sound.</p>
+  </div>
+</section>
+
+<main>
+
+  <section class="band reveal">
+    <h2>Task 01 &mdash; Animating 2D text</h2>
+    <div class="body">
+      <p class="note lede">Five compositions built as prototypes rather than finished pieces, so that one variable changes between each and the difference can be compared directly. The set moves through the <b>text panel</b>, <b>animation presets</b>, variable <b>animation speed</b>, <b>effects</b>, and finally a combined composition. Each is shown as a full After Effects interface screenshot alongside its video export.</p>
+
+      <div class="compgrid">
+        <figure class="shot">
+          <img src="images/a2-2d-01.jpg" alt="After Effects interface for composition 2D-01">
+          <figcaption><div class='taghead'>2D-01 &middot; Text panel and transformations</div><strong>Text panel, transformations and key frames.</strong><br>Type set in the <b>text panel</b> &mdash; Bodoni 72 Smallcaps at 249&nbsp;px &mdash; then the <b>Slide Down By Character</b> <b>animation preset</b> applied so the characters cascade rather than arriving together. The preset&rsquo;s <b>Range Selector</b> offset is <b>keyframed</b> from &minus;100&nbsp;%, and <b>transformations</b> run underneath it on scale, rotation and position.</figcaption>
+        </figure>
+        <figure class="clip">
+          <video src="video/a2-2d-01.mp4" controls muted loop playsinline preload="metadata"></video>
+          <figcaption><strong>The baseline of the set.</strong><br>The character-level animation and the layer-level animation resolve at different times, so the word does not land on a single frame. Everything that follows is a copy of this composition with one further variable introduced.</figcaption>
+          <div class="specs">1920 &times; 1080 &middot; 24 fps &middot; 3.0 s &middot; H.264</div>
+        </figure>
+      </div>
+      <div class="compgrid">
+        <figure class="shot">
+          <img src="images/a2-2d-02.jpg" alt="After Effects interface for composition 2D-02">
+          <figcaption><div class='taghead'>2D-02 &middot; Variable presets</div><strong>A different animation preset, and a reshaped speed graph.</strong><br>A second <b>animation preset</b> driving the characters through four full rotations on entry instead of a linear slide. The <b>Range Selector</b> end is held at 50&nbsp;% so only half the string animates at any moment, and the <b>key frames</b> on Offset were reshaped in the graph editor into a steep attack decaying into a long tail.</figcaption>
+        </figure>
+        <figure class="clip">
+          <video src="video/a2-2d-02.mp4" controls muted loop playsinline preload="metadata"></video>
+          <figcaption><strong>Impact rather than reveal.</strong><br>Against the even cascade of 2D-01, the characters here arrive almost immediately and then take the rest of the duration to settle. Same duration, entirely different distribution of movement across it.</figcaption>
+          <div class="specs">1920 &times; 1080 &middot; 24 fps &middot; 3.0 s &middot; H.264</div>
+        </figure>
+      </div>
+      <div class="compgrid">
+        <figure class="shot">
+          <img src="images/a2-2d-03.jpg" alt="After Effects interface for composition 2D-03">
+          <figcaption><div class='taghead'>2D-03 &middot; Aesthetic experimentation with effects</div><strong>Turbulent Displace and Tint.</strong><br><b>Turbulent Displace</b> applied with the amount <b>keyframed</b> so the letterforms distort progressively rather than arriving pre-warped, and a <b>Tint</b> effect remapping the white of the type toward red across the same duration.</figcaption>
+        </figure>
+        <figure class="clip">
+          <video src="video/a2-2d-03.mp4" controls muted loop playsinline preload="metadata"></video>
+          <figcaption><strong>Complex movement from one parameter.</strong><br>The Week&nbsp;07 materials recommend turbulent displacement as a fast route to complex animation, which proved accurate &mdash; a single keyframed value generates continuous organic movement that would have taken dozens of transform keyframes to approximate.</figcaption>
+          <div class="specs">1920 &times; 1080 &middot; 24 fps &middot; 4.0 s &middot; H.264</div>
+        </figure>
+      </div>
+      <div class="compgrid">
+        <figure class="shot">
+          <img src="images/a2-2d-04.jpg" alt="After Effects interface for composition 2D-04">
+          <figcaption><div class='taghead'>2D-04 &middot; Variables in the image aesthetics</div><strong>The same effect stack, inverted.</strong><br>The <b>Tint</b> relationship reversed and the type rescaled, with <b>Turbulent Displace</b> pushed the opposite way &mdash; a low amount against a large size, so instead of a fine warp chewing the letterforms it becomes a slow, wide drift across the whole word.</figcaption>
+        </figure>
+        <figure class="clip">
+          <video src="video/a2-2d-04.mp4" controls muted loop playsinline preload="metadata"></video>
+          <figcaption><strong>One effect, opposite parameters.</strong><br>Comparing this against 2D-03 isolates what the size value actually controls: the scale of the distortion field rather than its strength. Two compositions carrying the same effect produce completely different surfaces.</figcaption>
+          <div class="specs">1920 &times; 1080 &middot; 24 fps &middot; 4.0 s &middot; H.264</div>
+        </figure>
+      </div>
+      <div class="compgrid">
+        <figure class="shot">
+          <img src="images/a2-2d-05.jpg" alt="After Effects interface for composition 2D-05">
+          <figcaption><div class='taghead'>2D-05 &middot; Compositing multiple text layers</div><strong>Two text layers against a background layer.</strong><br>Two instances of the type offset in time over a red <b>background layer</b>, the rear one scaled to 130&nbsp;% and tinted paler so it reads as depth rather than as a duplicate. The <b>key frames</b> on position, scale and rotation are staggered between the two layers.</figcaption>
+        </figure>
+        <figure class="clip">
+          <video src="video/a2-2d-05.mp4" controls muted loop playsinline preload="metadata"></video>
+          <figcaption><strong>Resolving in two stages.</strong><br>Because the layers never land together, the composition completes in two movements instead of one. This is the closest the 2D set comes to the layered depth achieved with virtual cameras in Task 02.</figcaption>
+          <div class="specs">1920 &times; 1080 &middot; 24 fps &middot; 4.0 s &middot; H.264</div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Task 02 &mdash; Animating 3D text</h2>
+    <div class="body">
+      <p class="note lede">The same iterative method carried into three dimensions using the <b>Cinema 4D renderer</b>. A two&ndash;node <b>virtual camera</b> driven by a chain of parented nulls, <b>virtual lights</b> casting shadows, <b>geometry and material options</b> on the type, depth of field, and an <b>adjustment layer</b> grading a whole composition at once.</p>
+
+      <div class="compgrid">
+        <figure class="shot">
+          <img src="images/a2-3d-01.jpg" alt="After Effects interface for composition 3D-01">
+          <figcaption><div class='taghead'>3D-01 &middot; Virtual camera and geometry options</div><strong>A null-driven camera rig.</strong><br>A two&ndash;node <b>virtual camera</b> at 20&nbsp;mm, driven by a chain of parented nulls rather than keyframed directly, so the <b>key frames</b> on each null could be overlapped to produce a compound move smoother than a single camera animation allows. <b>Geometry options</b> applied an angular bevel to the <b>3D text</b> so the edges catch light, and a Glow <b>effect</b> lifts the bevelled faces.</figcaption>
+        </figure>
+        <figure class="clip">
+          <video src="video/a2-3d-01.mp4" controls muted loop playsinline preload="metadata"></video>
+          <figcaption><strong>The opening move, before lighting.</strong><br>The 20&nbsp;mm focal length exaggerates the perspective shift as the camera pushes in. This is the state of the composition before any virtual light was introduced, which is what makes the comparison against 3D-02 legible.</figcaption>
+          <div class="specs">1920 &times; 1080 &middot; 24 fps &middot; 5.1 s &middot; Cinema 4D renderer</div>
+        </figure>
+      </div>
+      <div class="compgrid">
+        <figure class="shot">
+          <img src="images/a2-3d-02.jpg" alt="After Effects interface for composition 3D-02">
+          <figcaption><div class='taghead'>3D-02 &middot; Virtual lights and material options</div><strong>A spot light with cast shadows.</strong><br>A spot <b>virtual light</b> at 150&nbsp;% intensity on a 70&deg; cone with <b>Casts Shadows</b> enabled and its position <b>keyframed</b> so the cast shadow travels. <b>Material options</b> on the hero text layer accept lights and shadows, while the surrounding graphic elements were set to <b>Accepts Lights: Off</b> so they stay flat.</figcaption>
+        </figure>
+        <figure class="clip">
+          <video src="video/a2-3d-02.mp4" controls muted loop playsinline preload="metadata"></video>
+          <figcaption><strong>Lighting as the reveal.</strong><br>Additional nulls parented into the camera chain give the text a floating drift independent of the camera move. A fade&ndash;in combines with an opacity drop on the background so the field inverts from white to black, and the light then brings the word into focus as the camera draws back &mdash; the reveal is done by lighting rather than by a scale or opacity keyframe.</figcaption>
+          <div class="specs">1920 &times; 1080 &middot; 24 fps &middot; 12.1 s &middot; spot light, casts shadows</div>
+        </figure>
+      </div>
+      <div class="compgrid">
+        <figure class="shot">
+          <img src="images/a2-3d-03.jpg" alt="After Effects interface for composition 3D-03">
+          <figcaption><div class='taghead'>3D-03 &middot; Animation presets and variable speed</div><strong>One preset, three timings.</strong><br>The <b>3D Basic Rotate X Cascade In</b> <b>animation preset</b> applied to <b>3D text</b>, then retimed three ways in a single composition. The speed graph shows the <b>key frames</b> reshaped to a 300&nbsp;%/sec peak so the motion accelerates hard and decays slowly, and a duplicate layer carries Posterize Time at 8&nbsp;fps against the composition&rsquo;s 24&nbsp;fps base.</figcaption>
+        </figure>
+        <figure class="clip">
+          <video src="video/a2-3d-03.mp4" controls muted loop playsinline preload="metadata"></video>
+          <figcaption><strong>Mechanical against weighted.</strong><br>Compared with the continuous camera move in 3D-01, the 8&nbsp;fps version reads mechanical and the eased version reads weighted. The same preset over the same duration, with an entirely different sense of mass.</figcaption>
+          <div class="specs">1920 &times; 1080 &middot; 24 fps &middot; 4.9 s &middot; Posterize Time 8 fps</div>
+        </figure>
+      </div>
+      <div class="compgrid">
+        <figure class="shot">
+          <img src="images/a2-3d-04.jpg" alt="After Effects interface for composition 3D-04">
+          <figcaption><div class='taghead'>3D-04 &middot; Geometry options and depth of field</div><strong>Extrusion and a rack focus.</strong><br><b>Geometry options</b> set the extrusion depth with an angular bevel on the <b>3D text</b>, duplicated across several Z positions. Depth of field was enabled in the <b>virtual camera</b>&rsquo;s camera options and the focus distance <b>keyframed</b> to rack from the nearest layer to the furthest.</figcaption>
+        </figure>
+        <figure class="clip">
+          <video src="video/a2-3d-04.mp4" controls muted loop playsinline preload="metadata"></video>
+          <figcaption><strong>Depth described by focus rather than scale.</strong><br>Spreading the layers through Z and pulling focus between them separates foreground from background without changing size &mdash; which is what stops flat layers in a 3D composition reading as stacked cards.</figcaption>
+          <div class="specs">1920 &times; 1080 &middot; 24 fps &middot; 3.2 s &middot; depth of field enabled</div>
+        </figure>
+      </div>
+      <div class="compgrid">
+        <figure class="shot">
+          <img src="images/a2-3d-05.jpg" alt="After Effects interface for composition 3D-05">
+          <figcaption><div class='taghead'>3D-05 &middot; Adjustment layers and effects</div><strong>One layer grading the whole composition.</strong><br>A <b>background layer</b> pushed back in Z gives the scene depth behind the type. An <b>adjustment layer</b> at the top of the stack carries Lumetri Color, Glow and CC Vignette, so a single layer grades every layer beneath it. Its opacity is <b>keyframed</b> from 0 to 100 so the contribution of the adjustment layer is directly visible on screen.</figcaption>
+        </figure>
+        <figure class="clip">
+          <video src="video/a2-3d-05.mp4" controls muted loop playsinline preload="metadata"></video>
+          <figcaption><strong>Why an adjustment layer rather than per-layer effects.</strong><br>Applying the same <b>effects</b> layer by layer would have meant duplicating them across every element, and would not have graded the background consistently with the type.</figcaption>
+          <div class="specs">1920 &times; 1080 &middot; 24 fps &middot; 8.0 s &middot; Lumetri, Glow, CC Vignette</div>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Task 03 &mdash; Refining, timing and compositing</h2>
+    <div class="body">
+      <p class="note lede">Selected sequences from the ten prototypes composited into one piece and cut against the waveform. Layer markers were tapped live against the audio before any animation was timed, so every cut lands on a hit rather than near one.</p>
+      <figure>
+        <video src="video/a2-master.mp4" controls playsinline preload="metadata"></video>
+        <figcaption><strong>The finished motion graphic design.</strong><br>Seven of the ten prototypes were carried into the final edit. The opening runs on the 3D camera and lighting sequences &mdash; DYNEMA PRESENTS, MOTION GRAPHICS and the lit MEDIA reveal &mdash; before the preset and speed work brings IN A WORLD in at twelve seconds. The 2D compositions occupy the middle, from sixteen to twenty-two seconds, and the piece closes on the extruded BUILT UPON and DESTRUCTION sequences with the depth of field pull, resolving on DEVASTATION. <b>2D-02</b> was cut: its four-rotation entry fought the pace of the section it landed in. Every cut was trimmed to a layer marker tapped against the waveform on playback.</figcaption>
+        <div class="specs">1920 &times; 1080 &middot; 24 fps &middot; H.264 &middot; synchronised to sound</div>
+      </figure>
+      <figure>
+        <img src="images/a2-master-timeline.jpg" alt="After Effects timeline of the master composition showing all layers and the audio waveform">
+        <figcaption><strong>The master timeline.</strong><br>The audio layer sits at the bottom with its waveform displayed and the layer markers above it. The marker positions were set first, by tapping against the track on playback, and every sequence was then trimmed to them &mdash; timing decided after the animation never synchronises properly.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>Task 04 &mdash; Reflective Report</h2>
+    <div class="body">
+      <p class="note" id="reflection">REFLECTION_GOES_HERE</p>
+    </div>
+  </section>
+
+  <section class="band reveal">
+    <h2>References</h2>
+    <div class="body">
+      <p class="note">Online tutorials and exemplars used in the research and development of this assignment.</p>
+      <ul class="refs">
+        <li>Voyce, M. <i>Kinetic typography work</i>. Referenced as the 2D exemplar in the Week&nbsp;07 course materials.</li>
+        <li><i>Art of the Title</i>. Referenced as the title-design exemplar in the Week&nbsp;08 course materials.</li>
+        <li><i>SUPER QUICK Kinetic Typography in After Effects</i> &mdash; Adobe. Text panel parameters, transformations and keyframing presets.</li>
+        <li><i>How to Create Kinetic Text With Waves in After Effects</i>. Turbulent displacement as a route to complex animation from a single keyframed parameter.</li>
+        <li><i>Kinetic Text After Effects Tutorial &mdash; Animated Typography Techniques [NO PLUGINS]</i>. Timing and synchronising kinetic text to sound using layer markers.</li>
+        <li><i>Create 3D Text with NO PLUG INS (After Effects)</i>. Adding a virtual camera, the orbit tool, point of focus, and material options.</li>
+        <li><i>Create A Dynamic 3D Text Animation In After Effects (No Plugins)</i>. Cinema 4D renderer, geometry options and extrusion depth.</li>
+        <li><span class="todo">Delete any of the above you did not actually use, and add any others you watched.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="pager">
+    <a href="06-reflection.html">&nwarr; Assignment 01 Reflective Report</a>
+    <a class="next" href="index.html">Home &nearr;</a>
+  </div>
+</main>
+
+<footer class="sitefoot">
+  <span>1740QCA Brodie Bruce &nbsp;s5480797</span>
+  <span>QCAD, Trimester 2, 2026</span>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
